@@ -9,15 +9,25 @@ img {
 }
 
 article {
+  animation: -webkit-background 2s alternate infinite linear;
   animation: background 2s alternate infinite linear;
   background: -webkit-linear-gradient(left, black 0, black 800px, red 1200px, black 1600px, black);
+  background: linear-gradient(left, black 0, black 800px, red 1200px, black 1600px, black);
   background-size: 2400px;
   width: 800px;
   height: 800px;
   position: absolute;
   top: 50%;
   left: 50%;
+  transform: -webkit-translate(-50%, -50%);
   transform: translate(-50%, -50%);
+
+}
+
+@-webkit-keyframes background {
+  100% {
+    background-position: -1600px 0;
+  }
 }
 
 @keyframes background {
