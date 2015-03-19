@@ -25,6 +25,9 @@ article {
 }
 
 @-webkit-keyframes background {
+  0% {
+    background-position: 0 0;
+  }
   100% {
     background-position: -1600px 0;
   }
